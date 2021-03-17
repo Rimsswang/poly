@@ -8,7 +8,8 @@ public class Loveya {
 		System.out.println("LaLaLa");
 		
 		
-
+		
+		
 	}
 
 }
