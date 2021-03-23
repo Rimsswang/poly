@@ -6,7 +6,7 @@ public class Loveya {
 		System.out.println("Love Ya");
 		System.out.println("Happy");
 		System.out.println("LaLaLa");
-		
+		System.out.println("Why");
 		
 		
 		
