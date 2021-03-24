@@ -9,6 +9,7 @@ public class Ex03_14 {
 
 		boo2 = (10 == 20);
 		System.out.printf("%s \n", boo2);
+		
 	}
 
 }
