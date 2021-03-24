@@ -6,9 +6,8 @@ public class Ex03_07 {
       int a;
       float b;
     
+      
       a = (int) 123.45f;
-      
-      
       
       b = 200;
     
