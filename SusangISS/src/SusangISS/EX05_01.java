@@ -11,6 +11,7 @@ public class EX05_01 {
 
 		System.out.println("³­ µÇÁö·Õ.");
 		
+		
 	}
 
 }
