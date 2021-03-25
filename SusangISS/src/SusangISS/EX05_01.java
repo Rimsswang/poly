@@ -8,7 +8,6 @@ public class EX05_01 {
 		if (a < 100) 
 			System.out.println("100보다 작군요..");
 		System.out.println("나도 100보다 작은데..");
-
 		System.out.println("난 되지롱.");
 		
 		
