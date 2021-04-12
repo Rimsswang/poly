@@ -7,6 +7,7 @@ public class Exam_3의배수AND5의배수 {
 		for (int i=1; i<=100; i++) {
 			if (i%3==0 && i%5==0)
 				{System.out.println("[3과 5의 배수]"+i);}
+			
 		}
 	}
 
