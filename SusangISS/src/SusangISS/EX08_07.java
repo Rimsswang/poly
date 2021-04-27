@@ -22,6 +22,7 @@ public class EX08_07 {
 		aa[2][2] = 11;
 		aa[2][3] = 12;
 		
+		
 		System.out.println("aa 배열크기 : " + aa.length);
 		System.out.println("------------------");
 		
