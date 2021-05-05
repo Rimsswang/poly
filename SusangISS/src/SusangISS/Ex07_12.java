@@ -22,6 +22,5 @@ public class Ex07_12 {
 			System.out.println("아직도 반복중...");
 		
 		}
-
 	}
 }
