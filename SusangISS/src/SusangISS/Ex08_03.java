@@ -32,5 +32,6 @@ public class Ex08_03 {
 		System.out.println("aa[" + j + "] : " + aa[j]);
 	}
 		
+		
 	}
 }
