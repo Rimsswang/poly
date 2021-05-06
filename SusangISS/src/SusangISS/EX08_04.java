@@ -24,6 +24,7 @@ public class EX08_04 {
 			System.out.println("abc[" + i + "]" +abc[i]);
 		}
 		
+		
 		for (int i = 0 ; i < bb.length; i++) {
 			System.out.println("bb[" + i + "]" + bb[i]);
 		}
