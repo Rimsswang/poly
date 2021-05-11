@@ -34,7 +34,5 @@ public class EX08_07 {
 			System.out.println("aa[" + i + "][3] : " + aa[i][3]);
 			System.out.println("------------------");
 }
-
-		
 	}
 }
