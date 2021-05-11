@@ -15,13 +15,12 @@ public class Exam_StarR {
 			}
 			if (a < 5) {
 				b++;
-			} else {
+			} else 
 				b--;
-			}
+			
 			System.out.println();
 		}
-
-		
+	}
 	}
 
-}
+
