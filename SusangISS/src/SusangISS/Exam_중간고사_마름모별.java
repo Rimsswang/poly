@@ -25,6 +25,5 @@ public class Exam_중간고사_마름모별 {
 		}
 
 		
-		
 	}
 }
