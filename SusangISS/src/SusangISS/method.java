@@ -21,6 +21,5 @@ public class method {
 		}
 		System.out.println("sum ÇÔ¼ö ³¡");	
 		return sum;
-		
 	}
 }
