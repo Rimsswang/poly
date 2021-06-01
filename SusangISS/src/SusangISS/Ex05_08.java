@@ -25,9 +25,7 @@ public class Ex05_08 {
                } else {
                   if (a >= 50) {
                      System.out.printf("F");
-                     
-                     
-                     
+                   
                   }
                }
             }
