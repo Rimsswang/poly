@@ -24,6 +24,7 @@ public class ListMapExam {
 		// 이협건 정보가 저장된 HashMap 객체를 List객체에 저장
 		rList.add(pMap);
 		
+		
 		// 이협건 정보저장으로 인해 사용이 끝난 HashMap 변수 메모리에서 삭제
 		pMap = null;
 
