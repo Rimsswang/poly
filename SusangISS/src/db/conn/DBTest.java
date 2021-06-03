@@ -4,17 +4,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DBconn {
+public class DBTest {
 
-	public static void main(String[] args) throws SQLException{
+	public static void main(String[] args) throws SQLException {
 Connection conn = null;
-String url = "jdbc:oracle:thin:@localhost:1421:ORCL";
+String url = "jdbc:oracle:thin:@localhost:1521:orcl";
 
 String user = "myuser"; //ø¿∂Û≈¨ æ∆¿Ãµ
-String passwd = "12341"; // ø¿∂Û≈¨ ∆–Ω∫øˆµÂ
+String passwd = "1234"; // ø¿∂Û≈¨ ∆–Ω∫øˆµÂ
 
 try {
-	Class.forName("Oracle.jdbc.driver.OracleDriveDriverr1");
+	Class.forName("oracle.jdbc.driver.OracleDriver");
 	conn = DriverManager.getConnection(url, user, passwd);
 	
 	System.out.println("ø¿∂Û≈¨ ¡¢º” º∫∞¯!!");
@@ -22,9 +22,9 @@ try {
 } catch (ClassNotFoundException e) {
 	System.out.println("ø¿∂Û≈¨ ¡¢º” Ω«∆–");
 	System.out.println("ojbdc6.jar ∆ƒ¿œø° ¡∏¿Á«œ¥¬ ¿⁄πŸ ∆ƒ¿œ¿ª √£¡ˆ ∏¯«‘");
-	System.out.println("¿Ã¿Ø : "+ e.toString());
+	System.out.println("¿Ã¿Ø : " + e.toString());
 } catch (Exception e) {
-	System.out.println("ø¿∂Û≈¨ ¡¢º” Ω«∆– - ≠M≥Û Exception±Ó¡ˆ »£√‚«‘");
+	System.out.println("ø¿∂Û≈¨ ¡¢º” Ω«∆– - √÷¡æ Exception±Ó¡ˆ »£√‚«‘");
 	System.out.println("¿Ã¿Ø : " + e.toString());
 	} finally {
 	if (conn != null) {
