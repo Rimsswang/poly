@@ -33,6 +33,7 @@ public class PrintUserInfo {
 				rMap = new HashMap<String, String>();
 			}
 			
+			
 			System.out.println("회원아이디(user_id) : " + rMap.get("user_id"));
 			System.out.println("회원이름(user_nm : " + rMap.get("user_nm"));
 			System.out.println("이메일(email) : " + rMap.get("email"));

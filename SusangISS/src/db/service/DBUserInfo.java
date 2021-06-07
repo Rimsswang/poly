@@ -16,13 +16,13 @@ public class DBUserInfo {
 
 	List<Map<String, String>> rList = null;
 
-	try{
+	try {
 	
 	Connection conn = DBConn.getDBConnection();
 	
 	PreparedStatement pstmt = null;
 	
-	String sql = "select USER_ID, USER_NM, EMAIL, ADDR, REG_DT from USER_INFO";
+	String sql = "select USER_ID, USER_NM, EMAIL, ADDR, REG_DT FROM USER_INFO";
 	
 	pstmt = conn.prepareStatement(sql);
 	
@@ -37,13 +37,6 @@ public class DBUserInfo {
 		String user_id = rs.getString("USER_ID");
 		System.out.println("user_id : " + user_id);
 		
-		while (rs.next()) {
-			
-			Map<String, String> rMap = new HashMap<String, String>();
-			
-			String user_id = rs.getString("USER_ID");
-			System.out.println("user_id : " + user_id);
-			
 			rMap.put("user_id", user_id);
 			
 			String user_nm = rs.getString("User_NM");
