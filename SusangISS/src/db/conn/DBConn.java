@@ -36,6 +36,7 @@ public class DBConn {
 		return conn;
 	}
 
+	
 	/**
 	 * 기존에 연결된 오라클 DB와 접속 해제하기 / 즉, 메모리에 올라간 Connection 객체를 메모리에 지우기
 	 * 
