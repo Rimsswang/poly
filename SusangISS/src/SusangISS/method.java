@@ -16,7 +16,6 @@ public class method {
 		System.out.println("sum 함수 시작");
 		int sum = 0;
 
-		
 		for (int i = i1; i <= i2; i++) {
 			sum += i;
 		}
