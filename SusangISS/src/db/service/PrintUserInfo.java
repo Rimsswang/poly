@@ -6,11 +6,43 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class PrintUserInfo {
 
 	public static void main(String[] args) throws SQLException {
 
+		Map<String, String> pMap = new HashMap<String, String>();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("-----------------------------------------------------");
+		System.out.print("회원아이디를 입력하시오 : ");
+		pMap.put("user_id", sc.next());
+		
+		/*
+		 * System.out.println("-----------------------------------------------------");
+		 * System.out.print("회원이름을 입력하시오 : "); pMap.put("user_nm", sc.next());
+		 * 
+		 * System.out.println("-----------------------------------------------------");
+		 * System.out.print("이메일을 입력하시오 : "); pMap.put("email", sc.next());
+		 * 
+		 * System.out.println("-----------------------------------------------------");
+		 * System.out.print("주소를 입력하시오 : "); pMap.put("addr", sc.next());
+		 */
+		
+		sc.close();
+		
+		  //DBinsert dbI = new DBinsert();
+	      //DBdelete dbI = new DBdelete();
+	      DBupdate dbI = new DBupdate();
+	      
+	      dbI.doUpdate(pMap);
+	      //dbI.doInsert(pMap);
+	      //dbI.doDelete(pMap);
+		
+		pMap = null;
+		
 		DBUserInfo ui = new DBUserInfo();
 		
 		List<Map<String, String>> rList = ui.getUserInfo();
@@ -32,7 +64,6 @@ public class PrintUserInfo {
 			if (rMap == null) { 
 				rMap = new HashMap<String, String>();
 			}
-			
 			
 			System.out.println("회원아이디(user_id) : " + rMap.get("user_id"));
 			System.out.println("회원이름(user_nm : " + rMap.get("user_nm"));
